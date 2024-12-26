@@ -1,0 +1,25 @@
+body {
+    background-color: #1a1a2e; /* Тёмный фиолетовый */
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    background-color: rgba(58, 12, 163, 0.9); /* Фиолетовый */
+    text-align: center;
+    padding: 50px 0;
+}
+
+h1 {
+    color: #d4af37; /* Золотой */
+}
+
+a.btn {
+    background-color: #7b1fa2; /* Фиолетовый */
+    color: #fff;
+    border: none;
+}
+
+a.btn:hover {
+    background-color: #9c27b0; /* Светлее */
+}

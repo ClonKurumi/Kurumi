@@ -1,0 +1,133 @@
+/* Основные стили */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #0d0d19; /* Темный фон (темно-синий/фиолетовый) */
+    color: #e0e0e0; /* Светлый текст */
+    margin: 0;
+    padding: 0;
+}
+
+/* Фон с магическими кругами */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../images/magic-circle.png') no-repeat center center/contain;
+    opacity: 0.15;
+    z-index: -1;
+}
+
+/* Навигация */
+.navbar {
+    background-color: #1c1c29; /* Темный фиолетовый для навигации */
+    border-bottom: 2px solid #ff416c; /* Яркий розово-красный акцент */
+}
+
+.navbar-brand, .nav-link {
+    color: #e0e0e0 !important; /* Светлый текст */
+}
+
+.nav-link:hover {
+    color: #ff416c !important; /* Розово-красный при наведении */
+}
+
+/* Заголовок сайта */
+header {
+    background: linear-gradient(rgba(13, 13, 25, 0.8), rgba(13, 13, 25, 0.9)), 
+                url('../images/date-a-live-header.jpg') no-repeat center center/cover;
+    color: #e0e0e0;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+header h1 {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #ff416c; /* Розово-красный акцент */
+}
+
+header p {
+    font-size: 1.3rem;
+    font-style: italic;
+    color: #d9d9d9;
+}
+
+/* Карточки */
+.card {
+    background-color: #1c1c29; /* Темно-синий/фиолетовый фон карточек */
+    border: 1px solid #2c2c3e; /* Тёмные границы */
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Легкое поднимание карточки */
+}
+
+.card-title {
+    color: #ff416c; /* Розово-красный заголовок */
+}
+
+.card-text {
+    color: #e0e0e0; /* Светлый текст */
+}
+
+.card img {
+    height: 250px;
+    object-fit: cover;
+    width: 100%;
+    border-bottom: 2px solid #ff416c;
+}
+
+.card a {
+    background-color: #ff416c; /* Розово-красная кнопка */
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.card a:hover {
+    background-color: #e10055; /* Темнее при наведении */
+}
+
+/* Основной контент */
+main {
+    padding: 40px 20px;
+}
+
+/* Футер */
+footer {
+    background-color: #1c1c29; /* Темный фон футера */
+    color: #e0e0e0;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 2px solid #ff416c;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Ссылки */
+a {
+    color: #ff416c; /* Розово-красные ссылки */
+}
+
+a:hover {
+    color: #e10055; /* Темнее при наведении */
+}
+
+/* Стили для кнопок навигации в navbar */
+.navbar-toggler {
+    border-color: #ff416c; /* Розовая кнопка для мобильной навигации */
+}
