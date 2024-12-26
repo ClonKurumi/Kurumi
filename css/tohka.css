@@ -23,3 +23,45 @@ a.btn {
 a.btn:hover {
     background-color: #9c27b0; /* Светлее */
 }
+@media (max-width: 768px) {
+    body {
+        background-color: #0f0f1b; /* Темнее для мобильных устройств */
+    }
+    
+    .card {
+        width: 100%; /* Карточки занимают всю ширину */
+        margin-bottom: 20px; /* Отступ между карточками */
+    }
+
+    header h1 {
+        font-size: 2rem; /* Меньший размер шрифта */
+    }
+
+    header p {
+        font-size: 1rem; /* Меньший размер описания */
+    }
+    
+    /* Настройки для навигации */
+    .navbar {
+        padding: 10px;
+    }
+
+    .navbar-brand {
+        font-size: 1.2rem; /* Уменьшаем размер логотипа */
+    }
+
+    .nav-link {
+        font-size: 1rem; /* Уменьшаем размер текста */
+    }
+}
+
+/* Для маленьких экранов (мобильные телефоны) */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem; /* Еще меньше размер для маленьких экранов */
+    }
+
+    .card {
+        font-size: 0.9rem;
+    }
+}
