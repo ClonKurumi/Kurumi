@@ -1,133 +1,131 @@
-/* Основные стили */
+/* Основные настройки */
 body {
-    font-family: 'Poppins', Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #0d0d19; /* Темный фон (темно-синий/фиолетовый) */
-    color: #e0e0e0; /* Светлый текст */
+    background-color: #1a1a2e; /* Тёмный фиолетовый фон */
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
 }
 
-/* Фон с магическими кругами */
-body::before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('../images/magic-circle.png') no-repeat center center/contain;
-    opacity: 0.15;
-    z-index: -1;
-}
-
 /* Навигация */
 .navbar {
-    background-color: #1c1c29; /* Темный фиолетовый для навигации */
-    border-bottom: 2px solid #ff416c; /* Яркий розово-красный акцент */
+    background-color: #7b1fa2(58, 12, 163, 0.9); /* Полупрозрачный фиолетовый */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-.navbar-brand, .nav-link {
-    color: #e0e0e0 !important; /* Светлый текст */
+.navbar-brand {
+    color: #d4af37; /* Золотой */
+    font-size: 1.8rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.navbar-brand:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.nav-link {
+    color: #ffffff;
+    font-size: 1rem;
+    margin: 0 10px;
 }
 
 .nav-link:hover {
-    color: #ff416c !important; /* Розово-красный при наведении */
+    color: #9c27b0; /* Светло-фиолетовый */
+    text-decoration: none;
 }
 
-/* Заголовок сайта */
+/* Заголовок */
 header {
-    background: linear-gradient(rgba(13, 13, 25, 0.8), rgba(13, 13, 25, 0.9)), 
-                url('../images/date-a-live-header.jpg') no-repeat center center/cover;
-    color: #e0e0e0;
+    background-color: rgba(58, 12, 163, 0.9); /* Фиолетовый */
     text-align: center;
     padding: 100px 20px;
 }
 
 header h1 {
-    font-size: 3.5rem;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    color: #ff416c; /* Розово-красный акцент */
+    color: #d4af37; /* Золотой */
+    font-size: 3rem;
 }
 
 header p {
-    font-size: 1.3rem;
-    font-style: italic;
-    color: #d9d9d9;
+    font-size: 1.5rem;
+    color: #ffffff;
 }
 
-/* Карточки */
-.card {
-    background-color: #1c1c29; /* Темно-синий/фиолетовый фон карточек */
-    border: 1px solid #2c2c3e; /* Тёмные границы */
-    border-radius: 8px;
-    overflow: hidden;
-    transition: transform 0.3s ease-in-out;
-}
-
-.card:hover {
-    transform: translateY(-10px); /* Легкое поднимание карточки */
-}
-
-.card-title {
-    color: #ff416c; /* Розово-красный заголовок */
-}
-
-.card-text {
-    color: #e0e0e0; /* Светлый текст */
-}
-
-.card img {
-    height: 250px;
-    object-fit: cover;
-    width: 100%;
-    border-bottom: 2px solid #ff416c;
-}
-
-.card a {
-    background-color: #ff416c; /* Розово-красная кнопка */
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 15px;
+/* Кнопки */
+a.btn {
+    background-color: #7b1fa2; /* Фиолетовый */
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
     border-radius: 5px;
-    display: inline-block;
-    margin-top: 15px;
+    text-decoration: none;
+    font-size: 1.2rem;
     transition: background-color 0.3s ease;
 }
 
-.card a:hover {
-    background-color: #e10055; /* Темнее при наведении */
-}
-
-/* Основной контент */
-main {
-    padding: 40px 20px;
+a.btn:hover {
+    background-color: #9c27b0; /* Светло-фиолетовый */
 }
 
 /* Футер */
 footer {
-    background-color: #1c1c29; /* Темный фон футера */
-    color: #e0e0e0;
     text-align: center;
-    padding: 20px 0;
-    border-top: 2px solid #ff416c;
+    background-color: rgba(58, 12, 163, 0.9);
+    color: #ffffff;
+    padding: 20px;
+    border-top: 3px solid #d4af37; /* Золотая линия */
 }
 
-footer p {
-    margin: 0;
+/* --- Адаптивность --- */
+
+/* На устройствах шириной до 768px (планшеты и телефоны) */
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    .nav-link {
+        font-size: 0.9rem;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header p {
+        font-size: 1.2rem;
+    }
 }
 
-/* Ссылки */
-a {
-    color: #ff416c; /* Розово-красные ссылки */
-}
+/* На устройствах шириной до 576px (телефоны) */
+@media (max-width: 576px) {
+    .navbar {
+        padding: 10px;
+    }
 
-a:hover {
-    color: #e10055; /* Темнее при наведении */
-}
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
 
-/* Стили для кнопок навигации в navbar */
-.navbar-toggler {
-    border-color: #ff416c; /* Розовая кнопка для мобильной навигации */
+    .nav-link {
+        font-size: 0.8rem;
+        margin: 5px;
+    }
+
+    header {
+        padding: 50px 10px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
 }

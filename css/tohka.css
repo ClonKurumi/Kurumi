@@ -23,3 +23,60 @@ a.btn {
 a.btn:hover {
     background-color: #9c27b0; /* Светлее */
 }
+footer {
+    text-align: center;
+    background-color: rgba(58, 12, 163, 0.9);
+    color: #ffffff;
+    padding: 20px;
+    border-top: 3px solid #d4af37; /* Золотая линия */
+}
+/* На устройствах шириной до 768px (планшеты и телефоны) */
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    .nav-link {
+        font-size: 0.9rem;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+}
+
+/* На устройствах шириной до 576px (телефоны) */
+@media (max-width: 576px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    .nav-link {
+        font-size: 0.8rem;
+        margin: 5px;
+    }
+
+    header {
+        padding: 30px 10px;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    header p {
+        font-size: 0.9rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}
