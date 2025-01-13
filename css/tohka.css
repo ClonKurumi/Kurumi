@@ -3,7 +3,32 @@ body {
     color: #ffffff;
     font-family: 'Arial', sans-serif;
 }
+.navbar {
+    background-color: #7b1fa2(58, 12, 163, 0.9); /* Полупрозрачный фиолетовый */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
 
+.navbar-brand {
+    color: #d4af37; /* Золотой */
+    font-size: 1.8rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.navbar-brand:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.nav-link {
+    color: #ffffff;
+    font-size: 1rem;
+    margin: 0 10px;
+}
+
+.nav-link:hover {
+    color: #9c27b0; /* Светло-фиолетовый */
+    text-decoration: none;
+}
 header {
     background-color: rgba(58, 12, 163, 0.9); /* Фиолетовый */
     text-align: center;
